@@ -21,7 +21,7 @@ app.listen(8070, () => {
         
         conn.createChannel(function (err, ch) {
             channel = ch;
-
+            //Queue assrtion
             ch.assertQueue(productQueue, { durable: false });
 
             ch.assertQueue(billQueue, { durable: false });
